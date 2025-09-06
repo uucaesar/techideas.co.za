@@ -115,7 +115,7 @@ section::before {
   background-size: cover;
   background-position: center;
 }
-#about {
+#solutions {
   background-image: url("./section-5.jpg");
   background-size: cover;
   background-attachment: fixed;

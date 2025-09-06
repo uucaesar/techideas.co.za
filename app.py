@@ -24,7 +24,7 @@ def home():
         msg = MIMEText(f"Sender's Name: {name} \n\nEmail: {email}\n\nEnquiry: {enquiry}")
 
         # Set the headers
-        msg['Subject'] = f"New Enquiry from {name}"
+        msg['Subject'] = f"New Message From {name}"
         msg['From'] = FROM
         msg['To'] = TO
 
