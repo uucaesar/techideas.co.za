@@ -254,8 +254,10 @@ li {
     line-height: var(--m-line-h);
 }
 .partners-img {
-    width: 80%;
-    height: auto;
+    background-image: url("./Partners.png");
+    background-size: cover;
+    width: 280px;
+    height: 730px;
 }
 
 .clients {
@@ -442,5 +444,13 @@ textarea {
   }
   li {
     text-align: left;
+  }
+  .partners-img {
+    background-image: url("./partners-desktop.png");
+    width: 830px;
+    height: 470px;
+  }
+  .clients img {
+    width: 150px;
   }
 }
