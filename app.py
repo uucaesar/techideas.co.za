@@ -15,10 +15,10 @@ def home():
         email = request.form["email"]
         enquiry = request.form["message"]
 
-        host = "mail.apsystems.africa"
+        host = "mail.techideas.co.za"
         server = smtplib.SMTP(host)
-        FROM = "No Reply <no-reply@apsystems.africa>"
-        TO = "cgama@apsystems.africa"
+        FROM = "No Reply <no-reply@techideas.co.za>"
+        TO = "admin@techideas.co.za"
 
         #Create a MIMEText object with the message body
         msg = MIMEText(f"Sender's Name: {name} \n\nEmail: {email}\n\nEnquiry: {enquiry}")
