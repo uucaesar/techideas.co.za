@@ -206,6 +206,7 @@ button {
     width: fit-content;
     font: var(--font);
     font-weight: var(--semi-bold);
+    cursor: pointer;
 }
 p {
     font-size: var(--p-m-size);
@@ -221,6 +222,7 @@ p {
     font-size: 12px;
     padding: 10px 5px;
     font-weight: var(--medium);
+    cursor: auto;
 
 }
 h3, h4 {
@@ -374,6 +376,11 @@ textarea {
   width: 100vw;
   background-color: white;
 }
+#solutions .group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 @media (min-width: 1000px) {
   nav {
@@ -436,6 +443,7 @@ textarea {
   }
   #solutions .group {
     gap: 20px;
+    flex-direction: row;
   }
   ul {
     align-items: flex-start;
