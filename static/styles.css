@@ -12,6 +12,8 @@
 
     --h1-m-size: 44px;
     --h2-m-size: 30px;
+    --h2-d-size: 36px;
+    --h3-d-size: 28px;
     --p-m-size: 15px;
 
     --m-line-h: 33px;
@@ -143,7 +145,7 @@ section::before {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 .container {
@@ -395,7 +397,7 @@ textarea {
     display: none;
   }
   .container {
-    padding: 80px 200px;
+    padding: 80px 10vw;
   }
   .logo-title img {
     width: 420px;
@@ -405,5 +407,40 @@ textarea {
   }
   p {
     line-height: var(--d-line-h);
+  }
+  .group {
+    display: flex;
+    gap: 10px;
+  }
+  .sub-group {
+    border: rgba(255, 255, 255, 0.644) 1px solid;
+    border-radius: 10px;
+    padding: 10px 30px 30px 30px;
+  }
+  h2 {
+    font-size: var(--h2-d-size);
+  }
+  h3, h4 {
+    text-align: left;
+  }
+  .sub-group p {
+    width: 300px;
+    text-align: left;
+  }
+  .solutions-container {
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+  }
+  #solutions .group {
+    gap: 20px;
+  }
+  ul {
+    align-items: flex-start;
+    list-style-type: disc;
+    gap: 0px;
+  }
+  li {
+    text-align: left;
   }
 }
