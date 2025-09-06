@@ -15,6 +15,7 @@
     --p-m-size: 15px;
 
     --m-line-h: 33px;
+    --d-line-h: 25px;
 
 }
 /* === Scroll-driven reveal for all elements inside .container === */
@@ -368,4 +369,41 @@ textarea {
   height: 1px;
   width: 100vw;
   background-color: white;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+  }
+ .menu {
+    position: static;
+    flex-direction: row;
+    transform: translateX(0);
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+ }
+ .menu a {
+  color: white;
+  text-decoration: underline;
+ }
+ nav .menu-icon {
+    display: none;
+  }
+  .container {
+    padding: 80px 200px;
+  }
+  .logo-title img {
+    width: 420px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    line-height: var(--d-line-h);
+  }
 }
