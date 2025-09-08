@@ -381,6 +381,15 @@ textarea {
   flex-direction: column;
   gap: 30px;
 }
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.icon-container img {
+  width: 25px;
+}
 
 @media (min-width: 1000px) {
   nav {
@@ -460,5 +469,8 @@ textarea {
   }
   .clients img {
     width: 150px;
+  }
+  .icon-container {
+    justify-content: normal;
   }
 }
