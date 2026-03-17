@@ -18,7 +18,7 @@ def home():
         host = "mail.techideas.co.za"
         server = smtplib.SMTP(host)
         FROM = "No Reply <no-reply@techideas.co.za>"
-        TO = "admin@techideas.co.za"
+        TO = "techideas2@gmail.com"
 
         #Create a MIMEText object with the message body
         msg = MIMEText(f"Sender's Name: {name} \n\nEmail: {email}\n\nEnquiry: {enquiry}")
