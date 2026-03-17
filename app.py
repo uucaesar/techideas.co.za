@@ -17,7 +17,7 @@ def home():
 
         # --- Email Server Settings ---
         host = "mail.techideas.co.za"
-        port = 587  # Standard port for sending mail with STARTTLS
+        port = 465  # Standard port for sending mail with STARTTLS
         
         # IMPORTANT: Replace these with a real email account and password hosted on techideas.co.za
         EMAIL_USERNAME = "no-reply@techideas.co.za" 
