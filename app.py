@@ -35,25 +35,23 @@ def home():
         msg['To'] = TO
 
         try:
-            # 1. Connect to the server using the designated port
-            server = smtplib.SMTP(host, port)
+            # 1. Use SMTP_SSL for port 465 (Implicit SSL)
+            server = smtplib.SMTP_SSL(host, 465) 
             
-            # 2. Secure the connection (Required before logging in)
-            server.starttls()
+            # NOTE: We DO NOT use server.starttls() here! It is already secure.
             
-            # 3. Authenticate with the server (This fixes the "Relay access denied" error)
+            # 2. Authenticate with the server
             server.login(EMAIL_USERNAME, EMAIL_PASSWORD)
 
-            # 4. Send the email
+            # 3. Send the email
             server.sendmail(FROM, TO, msg.as_string())
 
-            # 5. Quit the server
+            # 4. Quit the server
             server.quit()
 
             return f"Thank you for contacting us {name}! We will get back to you soon. "
             
         except Exception as e:
-            # If something goes wrong, it will print the exact reason here instead of a 500 error
             return f"<h1>Error sending email</h1><p>The server returned this error: <b>{e}</b></p>"
 
 if __name__ == '__main__':
